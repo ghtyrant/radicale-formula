@@ -1,0 +1,18 @@
+[auth]
+type = radicale_auth_ldap 
+ldap_url = {{ ldap.url }}
+ldap_base = {{ ldap.base }}
+ldap_filter = {{ ldap.filter }}
+ldap_attribute = {{ ldap.attribute }}
+ldap_binddn = {{ ldap.binddn }}
+ldap_password = {{ ldap.password }}
+ldap_scope = {{ ldap.scope }}
+
+[server]
+hosts = 0.0.0.0:5232
+
+[storage]
+filesystem_folder = {{ storage }}
+
+[logging]
+config = /etc/radicale/logging
